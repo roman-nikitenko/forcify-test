@@ -1,0 +1,14 @@
+@use "../../styles/variables";
+
+.section {
+  background-color: variables.$primary-gray;
+  margin-top: -100px;
+  z-index: -1;
+  
+  .number {
+    color: variables.$primary-white;
+    font-size: 600px;
+    font-weight: 700;
+    line-height: 689.4px;
+  }
+}
