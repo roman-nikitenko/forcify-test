@@ -1,0 +1,92 @@
+@use "../../styles/variables";
+
+.section {
+  
+  &-header {
+    display: flex;
+    align-items: center;
+    column-gap: 2.938rem;
+    background-color: variables.$primary-gray;
+    height: 15.75rem;
+    overflow: hidden;
+    
+    .number {
+      display: flex;
+      align-items: center;
+      width: 42.688rem;
+      height: 43.063rem;
+      color: variables.$primary-white;
+      font-size: 37.5rem;
+      font-weight: 700;
+      line-height: 28.125rem;
+      padding-top: 1.25rem;
+      margin-left: 15.625rem;
+    }
+
+    .description {
+      display: flex;
+      flex-direction: column;
+      row-gap: 0.688rem;
+
+      &-title {
+        color: variables.$primary-green;
+        font-weight: 500;
+        font-size: 2.25rem;
+        line-height: 2.585rem;
+      }
+
+      &-subtitle {
+        color: variables.$subtitle-text;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.149;
+      }
+    }
+  }
+  &-body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 6.313rem;
+    height: 37.5rem;
+    background-image: url("../../img/buildings.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: variables.$primary-white;
+    box-shadow: 0 0 12.5rem 0 #00000080;
+
+
+
+    &-title {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      row-gap: 21px;
+      width: 556px;
+      padding: 3.563rem 0.313rem 3.563rem 4.188rem;
+      z-index: 1;
+      
+      .decoration-border {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 17.188rem;
+        border: 5px solid variables.$primary-green;
+        z-index: -1;
+      }
+      
+      .title {
+        width: 34.75rem;
+        font-size: 4.5rem;
+        font-weight: 700;
+        line-height: 4rem;
+      }
+    }
+    
+    &-description {
+      width: 30.125rem;
+    }
+  }
+}

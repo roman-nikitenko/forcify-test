@@ -1,0 +1,41 @@
+@use '../../styles/variables';
+
+.contacts-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../img/banner3.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 31.25rem;
+
+  .contacts-section-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 6.813rem;
+    
+    &-address {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      row-gap: 0.688rem;
+      
+      a {
+        text-decoration: none;
+        color: variables.$subtitle-text;
+      }
+      
+      .underline {
+        text-decoration: underline;
+      }
+
+      &-name {
+        color: variables.$primary-green;
+        font-weight: 500;
+        font-size: 2.25rem;
+        line-height: 2.585rem;
+      }
+    }
+  }
+}

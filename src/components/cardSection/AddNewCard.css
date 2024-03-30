@@ -1,0 +1,18 @@
+.card-new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22.5rem;
+  height: 12.5rem;
+  border: 5px solid #58BC48;
+  border-radius: 0.625rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+.card-new span {
+  padding-bottom: 1.875rem;
+  color: #58BC48;
+  font-size: 12.5rem;
+}
+
+/*# sourceMappingURL=AddNewCard.css.map */

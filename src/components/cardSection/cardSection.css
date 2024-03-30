@@ -1,0 +1,24 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6.875rem;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7.375rem;
+  padding-bottom: 9.625rem;
+  background-color: #000000;
+}
+.cards-title {
+  color: #58BC48;
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 4rem;
+}
+.cards-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.625rem;
+  row-gap: 1.75rem;
+}
+
+/*# sourceMappingURL=cardSection.css.map */

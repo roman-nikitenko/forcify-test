@@ -1,0 +1,52 @@
+.card {
+  position: relative;
+  background-color: #232526;
+  border-radius: 0.625rem;
+  padding: 1.688rem 2.75rem 2.188rem 2.188rem;
+  width: 22.5rem;
+  transition: all 400ms ease;
+}
+.card:hover {
+  background-color: #191B1C;
+}
+.card:hover > .card-buttons {
+  transition: opacity 500ms ease;
+  visibility: visible;
+  opacity: 1;
+}
+.card-buttons {
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.card-buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  background-color: #58BC48;
+  border-radius: 0.625rem;
+}
+.card-title h5 {
+  color: #58BC48;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+.card-description {
+  height: 3.875rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=card.css.map */

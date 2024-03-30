@@ -1,0 +1,15 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #15212C;
+  color: #C6D8E9;
+  padding: 30px 0 32px;
+}
+.footer article {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.149rem;
+}
+
+/*# sourceMappingURL=footer.css.map */

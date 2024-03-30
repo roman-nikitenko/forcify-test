@@ -1,0 +1,79 @@
+.section-header {
+  display: flex;
+  align-items: center;
+  column-gap: 2.938rem;
+  background-color: #15212C;
+  height: 15.75rem;
+  overflow: hidden;
+}
+.section-header .number {
+  display: flex;
+  align-items: center;
+  width: 42.688rem;
+  height: 43.063rem;
+  color: #FFFFFF;
+  font-size: 37.5rem;
+  font-weight: 700;
+  line-height: 28.125rem;
+  padding-top: 1.25rem;
+  margin-left: 15.625rem;
+}
+.section-header .description {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.688rem;
+}
+.section-header .description-title {
+  color: #58BC48;
+  font-weight: 500;
+  font-size: 2.25rem;
+  line-height: 2.585rem;
+}
+.section-header .description-subtitle {
+  color: #C6D8E9;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.149;
+}
+.section-body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6.313rem;
+  height: 37.5rem;
+  background-image: url("../../img/buildings.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+  box-shadow: 0 0 12.5rem 0 #00000080;
+}
+.section-body-title {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 21px;
+  width: 556px;
+  padding: 3.563rem 0.313rem 3.563rem 4.188rem;
+  z-index: 1;
+}
+.section-body-title .decoration-border {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 17.188rem;
+  border: 5px solid #58BC48;
+  z-index: -1;
+}
+.section-body-title .title {
+  width: 34.75rem;
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 4rem;
+}
+.section-body-description {
+  width: 30.125rem;
+}
+
+/*# sourceMappingURL=section.css.map */

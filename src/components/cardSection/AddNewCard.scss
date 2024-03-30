@@ -1,0 +1,19 @@
+@use "../../styles/variables";
+
+.card-new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22.5rem;
+  height: 12.5rem;
+  border: 5px solid variables.$primary-green;
+  border-radius: 0.625rem;
+  background-color: transparent;
+  cursor: pointer;
+  
+  span {
+    padding-bottom: 1.875rem;
+    color: variables.$primary-green;
+    font-size: 12.5rem;
+  }
+}

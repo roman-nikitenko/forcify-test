@@ -1,0 +1,49 @@
+@use "../../styles/variables";
+
+.header-wrapper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 46.875rem;
+  background-image: url("../../img/hero-banner.png");
+  overflow: hidden;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  box-shadow: 0 30px 100px 0 #00000080;
+
+  .header {
+
+    &-content {
+      text-align: center;
+      width: 62.25rem;
+      display: flex;
+      flex-direction: column;
+      color: variables.$primary-white;
+      
+      &-title {
+        font-weight: 700;
+        font-size: 4.5rem;
+        line-height: 4rem;
+        margin-bottom: 2.063rem;
+      }
+      
+      &-subtitle {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 1.724rem;
+        margin-bottom: 1.125rem;
+      }
+    }
+
+    &-content:after {
+      margin: 0 auto;
+      content: "";
+      width: 27.375rem;
+      height: 0.625rem;
+      background-color: variables.$primary-green;
+    }
+  }
+}
