@@ -15,4 +15,21 @@
   font-size: 12.5rem;
 }
 
+.modal-header {
+  color: #C6D8E9;
+  background-color: #15212C;
+}
+.modal-body {
+  background-color: #15212C;
+  color: #C6D8E9;
+}
+.modal .submit-button {
+  color: #C6D8E9;
+  background-color: #58BC48;
+  border: none;
+  padding: 0.5rem;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
 /*# sourceMappingURL=AddNewCard.css.map */

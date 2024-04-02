@@ -6,6 +6,7 @@
   border-radius: 0.625rem;
   padding: 1.688rem 2.75rem 2.188rem 2.188rem;
   width: 22.5rem;
+  height: 12.5rem;
   transition: all 400ms ease;
   
   &:hover {
@@ -41,20 +42,27 @@
     }
   }
   
-  &-title {
-    h5 {
-      color: variables.$primary-green;
-      font-weight: 700;
-      font-size: 1.5rem;
-      line-height: 1.75rem;
-    }
-  }
-
-  &-description {
-    height: 3.875rem;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
     overflow: hidden;
+    flex: 1;
+    
+    &-title {
+      h5 {
+        color: variables.$primary-green;
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+      }
+    }
+
+    &-description {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
   }
 }

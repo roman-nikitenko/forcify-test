@@ -17,3 +17,27 @@
     font-size: 12.5rem;
   }
 }
+
+.modal {
+  
+  &-header {
+    color: variables.$subtitle-text;;
+    background-color: variables.$primary-gray;
+  }
+
+
+  &-body {
+    background-color: variables.$primary-gray;
+    color: variables.$subtitle-text;
+  }
+  
+  .submit-button {
+    color: variables.$subtitle-text;
+    background-color: variables.$primary-green;
+    border: none;
+    padding: 0.5rem;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+

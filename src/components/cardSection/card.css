@@ -4,6 +4,7 @@
   border-radius: 0.625rem;
   padding: 1.688rem 2.75rem 2.188rem 2.188rem;
   width: 22.5rem;
+  height: 12.5rem;
   transition: all 400ms ease;
 }
 .card:hover {
@@ -35,14 +36,20 @@
   background-color: #58BC48;
   border-radius: 0.625rem;
 }
-.card-title h5 {
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  flex: 1;
+}
+.card-wrapper-title h5 {
   color: #58BC48;
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 1.75rem;
 }
-.card-description {
-  height: 3.875rem;
+.card-wrapper-description {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
