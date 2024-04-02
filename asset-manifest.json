@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/forcify-test/static/css/main.c79f9c82.css",
-    "main.js": "/forcify-test/static/js/main.41ca67ca.js",
+    "main.css": "/forcify-test/static/css/main.a3ea9819.css",
+    "main.js": "/forcify-test/static/js/main.e4466a43.js",
     "static/media/hero-banner.png": "/forcify-test/static/media/hero-banner.91d7e2a40041d00a024e.png",
     "static/media/buildings.png": "/forcify-test/static/media/buildings.d9ce506c161482c770df.png",
     "static/media/banner3.jpeg": "/forcify-test/static/media/banner3.c32175b94f7908d273fa.jpeg",
@@ -9,11 +9,11 @@
     "static/media/edit.svg": "/forcify-test/static/media/edit.8f6be66f8356cdfbcaa2cedeaaa2c3e8.svg",
     "static/media/delete.svg": "/forcify-test/static/media/delete.448eb180d1a3c10bae44c3ea57dd0a9e.svg",
     "index.html": "/forcify-test/index.html",
-    "main.c79f9c82.css.map": "/forcify-test/static/css/main.c79f9c82.css.map",
-    "main.41ca67ca.js.map": "/forcify-test/static/js/main.41ca67ca.js.map"
+    "main.a3ea9819.css.map": "/forcify-test/static/css/main.a3ea9819.css.map",
+    "main.e4466a43.js.map": "/forcify-test/static/js/main.e4466a43.js.map"
   },
   "entrypoints": [
-    "static/css/main.c79f9c82.css",
-    "static/js/main.41ca67ca.js"
+    "static/css/main.a3ea9819.css",
+    "static/js/main.e4466a43.js"
   ]
 }
