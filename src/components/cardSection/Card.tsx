@@ -5,31 +5,31 @@ import './card.scss';
 import { CardType } from '../../type/CardType';
 import cardStore from '../../store/cardStore';
 import Modal from 'react-bootstrap/Modal';
-import Spinner from 'react-bootstrap/Spinner';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 
 
 type Props = {
   card: CardType
-}
+};
 
 export const Card: React.FC<Props> = ({ card }) => {
   const [show, setShow] = useState(false);
-  const [textArea, setTextArea] = useState(card.description)
+  const [textArea, setTextArea] = useState(card.description);
   
   const editHandler = () => {
-    setShow(true)
-  }
+    setShow(true);
+  };
   
   const removeHandler = (id: number) => {
     cardStore.removeCard(id);
-  }
+  };
   
   const submitHandler = () => {
-    cardStore.editTextCard(card.id, textArea)
-    setShow(false)
-  }
+    if (!textArea.trim()) return;
+    cardStore.editTextCard(card.id, textArea);
+    setShow(false);
+  };
   
   return (
     <>

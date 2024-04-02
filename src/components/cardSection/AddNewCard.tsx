@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "./AddNewCard.scss"
+import "./AddNewCard.scss";
 import Modal from 'react-bootstrap/Modal';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
@@ -9,34 +9,34 @@ import { CardType } from '../../type/CardType';
 
 export const AddNewCard: React.FC = () => {
   const [show, setShow] = useState(false);
-  const [titlePopup, setTitlePopup] = useState('')
-  const [textArea, setTextArea] = useState('')
-  const [isLoading, setIsLoading] = useState(false)
+  const [titlePopup, setTitlePopup] = useState('');
+  const [textArea, setTextArea] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
   
   const handler = async () => {
-    setShow(true)
-    setIsLoading(true)
-    const response = await fetch('https://www.boredapi.com/api/activity')
-    const { activity } = await response.json()
+    setShow(true);
+    setIsLoading(true);
+    const response = await fetch('https://www.boredapi.com/api/activity');
+    const { activity } = await response.json();
 
-    setIsLoading(false)
-    setTitlePopup(activity)
-  }
+    setIsLoading(false);
+    setTitlePopup(activity);
+  };
   
   const submitHandler = () => {
-    if (!textArea) return 
+    if (!textArea.trim()) return;
       
     const newCard: CardType = {
       id: Math.floor(Math.random() * 1000),
       title: titlePopup,
       description: textArea,
-    }
+    };
     
-    card.addCard(newCard)
-    setTextArea('')
+    card.addCard(newCard);
+    setTextArea('');
 
-    setShow(false)
-  }
+    setShow(false);
+  };
   
   return (
     <>

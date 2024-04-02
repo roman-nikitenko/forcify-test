@@ -7,6 +7,7 @@
   background-position: center;
   background-size: cover;
   height: 31.25rem;
+  box-shadow: 0 0 12.5rem 0 #00000080;
 }
 .contacts-section .contacts-section-wrapper {
   display: flex;

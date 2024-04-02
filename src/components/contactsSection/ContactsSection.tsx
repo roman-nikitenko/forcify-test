@@ -1,5 +1,5 @@
 import React from 'react';
-import './contactSection.scss'
+import './contactSection.scss';
 import coworkers from '../../img/coworkers.png';
 
 export const ContactsSection: React.FC = () => {

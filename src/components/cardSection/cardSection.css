@@ -7,6 +7,7 @@
   padding-top: 7.375rem;
   padding-bottom: 9.625rem;
   background-color: #000000;
+  box-shadow: 30px 0 12.5rem 0 #00000080;
 }
 .cards-title {
   color: #58BC48;

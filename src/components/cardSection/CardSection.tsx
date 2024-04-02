@@ -1,5 +1,5 @@
 import React from 'react';
-import "./cardSection.scss"
+import "./cardSection.scss";
 import { Card } from './Card';
 import { AddNewCard } from './AddNewCard';
 import card from '../../store/cardStore';

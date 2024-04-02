@@ -6,14 +6,14 @@ type Props = {
   number: string;
   title: string;
   subtitle: string;
-  backgroundBody?: string;
+  reverse?: boolean;
 }
 
-export const Section: React.FC<Props> = ({ children, number, title, subtitle, backgroundBody }) => {
+export const Section: React.FC<Props> = ({ children, number, title, subtitle, reverse }) => {
   return (
     <section className="section">
-      <div className="section-header">
-        <span className="number">
+      <div className="section-header" style={{ flexDirection: reverse ? 'row-reverse' : 'row' }}>
+        <span className="number mx-xl-5">
           { number }
         </span>
         <div className="description">
@@ -25,7 +25,7 @@ export const Section: React.FC<Props> = ({ children, number, title, subtitle, ba
           </p>
         </div>
       </div>
-      { children }
+        { children }
     </section>
   );
 };

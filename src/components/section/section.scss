@@ -9,6 +9,7 @@
     background-color: variables.$primary-gray;
     height: 15.75rem;
     overflow: hidden;
+    box-shadow: inset 0 0 12.5rem 0 #00000080;
     
     .number {
       display: flex;
@@ -20,7 +21,6 @@
       font-weight: 700;
       line-height: 28.125rem;
       padding-top: 1.25rem;
-      margin-left: 15.625rem;
     }
 
     .description {
@@ -54,10 +54,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     color: variables.$primary-white;
-    box-shadow: 0 0 12.5rem 0 #00000080;
-
-
-
+    
     &-title {
       position: relative;
       display: flex;
